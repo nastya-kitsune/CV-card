@@ -12,11 +12,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: #fff;
-    /* background: url('https://s3-alpha-sig.figma.com/img/a7db/a733/bc9151c4f048c9dba17da1ed5c8ae8df?Expires=1632096000&Signature=AIPPBwFVs2tYjNo7LBfw4Nvu9jE9g0xNG8pse~Uaz1Fck640NLX~ISrmqyjSGYyqUsGweA2-TGKLbGpie~wRz-trY~Y0aNpfpVTflJuwTB3K3fWIqlNft-n3AuRvdes-6xvWc0EnVyWQMgm-XFazfL2XcPlM85FYej9L9sKqCJhCoHwr7KLXxQGxGSuppZYDshF6kAtJVf3zCbzY4MCYKllYCflyyzgHwDwvduDFga68bP2zT36Y4kXdG3x8enL3LTA~VJex0Rzsdp7zsr4~-id3nhU88l4lhOcu1a-7nnhoNooHvW3Ty6v~j4l7ACqcZqpL2Os7o5c8iJPDc01SEA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA') repeat;  */
-    background: url('https://images.unsplash.com/photo-1526655805340-274e69922288?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80') repeat;
-    background-size: 250px; 
-    width: 100%;
-    height: 100%; 
+    background-color: #161616;
 }
 
 .wrapper {
@@ -86,7 +82,9 @@ body {
         top: 420px;
     }
     .container {
+        margin-top: 30px;
         bottom: 50px;
+        left: 13%;
     }  
 }
 @media (max-width:375px) {
@@ -259,7 +257,12 @@ body {
     position: relative;
     line-height: 0;
 }
-
+@media (max-width:375px) {
+    .container {
+        left: 6%;
+        top: -43px;
+    }
+}
 
 .container:after {
 	content: "";
@@ -327,6 +330,12 @@ body {
   @media (min-width: 1679px) {
     .section__slogan {
        font-size: 30px;
+    }
+  }
+  @media (max-width:375px) {
+    .section__slogan {
+        left: 15%;
+        bottom: 3%;
     }
   }
 
